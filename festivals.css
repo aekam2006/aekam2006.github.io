@@ -1,0 +1,49 @@
+
+header h1 {
+    text-align: center;
+    top:30px;
+}
+
+img {
+     float: right ;
+    margin-left: 10px ;
+    margin-right:5px;
+    margin-bottom:10px;
+}
+#heading2{
+    text-decoration:underline;
+    text-decoration-style: dotted;
+    padding: 10px ;
+}
+#start{
+    padding: 20px ;
+
+}
+#Diwali{
+    border: 4px solid black ;
+    padding: 20px;
+}
+#Holi{
+    border: 4px solid black ;
+    padding: 20px ;
+    
+}
+#Baisakhi{
+    border: 4px solid black ;
+    padding: 20px ;
+    
+}
+table {
+    border: 2px solid white;
+    background-color: slategray;
+    padding: 10px ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+  }
+  
+  th,
+  td {
+    border: 1px solid rgb(160 160 160);
+    background-color: #e0e0e0;
+    padding: 5px ;
+  }
