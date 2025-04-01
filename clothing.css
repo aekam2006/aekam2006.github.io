@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Beautiful gradient background */
+    color: #333;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    background-color: #FFD700;
+    padding: 10px;
+}
+
+.grid-nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.grid-nav li {
+    padding: 10px;
+}
+
+.grid-nav a {
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+}
+
+
+/* Grid for Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: white; /* White background for tables */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for tables */
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+#women {
+    background-color: lightgray;
+}
+
+#men {
+    background-color: lightgreen;
+}
+
+/* Centering Images */
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center images */
+    margin: 0; /* Remove default margin */
+}
+
+img {
+    width: 200px; /* Average size for images */
+    height: auto;
+    margin: 0 0 15px 0; /* Centered margin */
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for images */
+}
+
+/* Multicolumn Layout for Paragraphs */
+.multicol {
+    column-count: 2;
+    column-gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .multicol {
+        column-count: 1;
+    }
+
+    img {
+        width: 100%; /* Full width for mobile */
+        margin: 0 auto 15px; /* Centered margin */
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+/* Additional Content Styles */
+.content {
+    margin: 20px;
+    background-color: white; /* White background for content */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for content */
+}
+
+.content h3 {
+    text-decoration: underline;
+    color: #333;
+}

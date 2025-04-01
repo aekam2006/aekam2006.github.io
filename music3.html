@@ -4,35 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        table {
-            border: 1px solid black;
-            
-        }
-        td, th {
-            border: 1px solid black;
-
-        }
-        #Classical-Music {
-            border: 5px solid black;
-
-        } 
-        #Folk-Music {
-            border: 5px solid black;
-        }
-        #Classical-Dance {
-            border: 5px solid black;
-        }
-    </style>
+    <link rel="stylesheet" href="music3.css">
     
 </head>
 <body>
-    <header id="top">
+    <header>
          <h1>DANCE AND MUSIC</h1>
-        <a href="index.html"> RETURN TO HOME PAGE</a>
-        <br>
-        <a href="#bottom"> <i>LINK TO BOTTOM </i> </a> <!--Link to bottom section-->
+        
     </header>
+    <nav id="top">
+        <ul class="grid-nav">
+            <li><a href="index.html"> RETURN TO HOME PAGE</a></li>
+            <li><a href="#bottom"> <i>LINK TO BOTTOM </i> </a></li> <!--Link to bottom section-->
+    </ul>
+    </nav>
     <hr>
     <main>
         <section>
@@ -40,14 +25,13 @@
            
             <img src="dance.jpeg" alt="disntict dance cultures" style="width: 500px;">
            
-            <p>Dance and music act as custodians of our rich cultural heritage, with stories, customs and rituals passed down from generation to generation. Through classical dances like Bharatnatyam and Kathak, we are transported to ancient times, where mythological stories come alive with beautiful movements and intricate footwork. Similarly, folk dances like Garba and Bhangra celebrate the diversity of our land, reflecting the joys and struggles of daily life in different regions. Furthermore, these art forms are not just for entertainment; They are the living embodiment of our history and identity. Be it the rhythmic beats of the dhol or the melodious beats of the sitar, they carry with us the echoes of the past, connecting us to our ancestors and our cultural roots.</p>
-            <p>Beyond mere entertainment, dance and music are deeply rooted in India's spiritual and cultural fabric. Rooted in the concepts of 'nritya' (dance) and 'sangeet' (music), they provide a medium for spiritual upliftment and self-expression. Whether it's the rhythmic beats of the tabla or the soulful melody of a classical raga, these art forms create a sense of connection with something bigger than ourselves, stirring the depths of our emotions and beliefs.</p>
+            <p class="description">Dance and music act as custodians of our rich cultural heritage, with stories, customs and rituals passed down from generation to generation. Through classical dances like Bharatnatyam and Kathak, we are transported to ancient times, where mythological stories come alive with beautiful movements and intricate footwork. Similarly, folk dances like Garba and Bhangra celebrate the diversity of our land, reflecting the joys and struggles of daily life in different regions. Furthermore, these art forms are not just for entertainment; They are the living embodiment of our history and identity. Be it the rhythmic beats of the dhol or the melodious beats of the sitar, they carry with us the echoes of the past, connecting us to our ancestors and our cultural roots.
+            Beyond mere entertainment, dance and music are deeply rooted in India's spiritual and cultural fabric. Rooted in the concepts of 'nritya' (dance) and 'sangeet' (music), they provide a medium for spiritual upliftment and self-expression. Whether it's the rhythmic beats of the tabla or the soulful melody of a classical raga, these art forms create a sense of connection with something bigger than ourselves, stirring the depths of our emotions and beliefs.</p>
     </section>
     <hr>
     <details>
         <summary><h2><i><u>Table showing different music and dance forms in India:</u></i></h2></summary>
         
-    <div>
         <table>
             <tbody>
                 <tr>
@@ -109,10 +93,10 @@
             
 
         </table>
-    </div>
+
 </details>
     <br>
-    <div>
+    <div class="music-dance-container">
         <section id="Classical-Music">
             <header>
                 <h2><i><u>Classical Music</u></i></h2>
@@ -123,9 +107,9 @@
             <p>The two main traditions of Indian classical music are Carnatic music, which is practised predominantly in the peninsular (southern) regions, and Hindustani music, which is found in the northern, eastern and central regions. The basic concepts of this music includes Shruti (microtones), Swaras (notes), Alankar (ornamentations), Raga (melodies improvised from basic grammars), and Tala (rhythmic patterns used in percussion). Its tonal system divides the octave into 22 segments called Shrutis, not all equal but each roughly equal to a quarter of a whole tone of the Western music. Both the classical music are standing on the fundamentals of The seven notes of Indian Classical music. These seven notes are also called as Sapta svara or Sapta Sur. These seven svaras are Sa, Re, Ga, Ma, Pa, Dha and Ni respectively. These Sapta Svaras are spelt as Sa, Re, Ga, Ma, Pa, Dha and Ni, but these are shortforms of Shadja (षड्ज), Rishabha (ऋषभ), Gandhara (गान्धार), Madhyama (मध्यम), Panchama (पंचम), Dhaivata (धैवत) and Nishada (निषाद) respectively.[36] These are also equivalent to Do, Re, Mi, Fa, So, La, Ti. Only these seven svaras built up the Hindustani classical music and the Carnatic classical music. These seven svaras are the fundamentals of a raga. This seven svaras without any variations in them, are called as Shuddha svaras. Variations in these svaras cause them to be Komal and Tivra svaras. All the other svaras except Sadja(Sa) and Pancham (Pa) can be Komal or Tivra svaras but Sa and Pa are always Shuddha svaras. And hence svaras Sa and Pa are called Achal Svaras, since these svaras don't move from their original position while svaras Ra, Ga, Ma, Dha, Ni are called Chal Svaras, since these svaras move from their original position.</p>
 
         </section>
-    </div>
+    
         <br>
-        <div>
+        
             <article id="Folk-Music">
                 <header>
                     <h2><i><u>Folk Music</u></i></h2>
@@ -138,9 +122,9 @@
                     Hira Devi Waiba is hailed as the pioneer of Nepali folk songs and Tamang Selo. Her song 'Chura ta Hoina Astura' (चुरा त होइन अस्तुरा) is said to be the first Tamang Selo ever recorded. She has sung nearly 300 songs through her musical career spanning 40 years.[40][41] After Waiba's death in 2011, her son Satya Aditya Waiba (producer/manager) and Navneet Aditya Waiba (singer) collaborated and re-recorded her most iconic songs and released an album titled Ama Lai Shraddhanjali (आमालाई श्रद्धाञ्जली-Tribute to Mother).[42][43][44] The duo are the only individuals in the Nepali folk music genre who produce authentic traditional Nepali folk songs without adulteration or modernisation.</p>
 
             </article>
-        </div>
+        
         <br>    
-        <div>
+        
             <article id="Classical-Dance">
                 <header>
                     <h2><i><u>Classical Dance</u></i></h2>
@@ -159,12 +143,12 @@
                     </li>
                 </ol>
             </article>
-        </div>    
+            
 
-    
+    </div>
     <p>Link to other Pages:</p>
     <nav>
-        <ul>
+        <ul class="grid-nav">
             <li><a href="index.html">HOME PAGE</a></li>
             <li><a href="festivals.html">FESTIVALS</a></li>
             <li><a href="clothing.html">CLOTHING</a></li>

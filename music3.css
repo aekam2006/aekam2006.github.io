@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F8F9FA;
+    color: #333333;
+    
+}
+
+header {
+    background-color: rgb(146, 146, 232);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    background-color: #FFD700;
+    padding: 10px;
+}
+
+
+.grid-nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.grid-nav li {
+    padding: 10px;
+}
+
+.grid-nav a {
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+}
+
+/* Flexbox Layout for Music & Dance Sections */
+.music-dance-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 20px;
+}
+
+.music-dance-container section,
+.music-dance-container article {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styling (Grid Application) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: white;
+}
+
+th, td {
+    border: 1px solid #003366;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #3ff3a2;
+    color: #003366;
+}
+
+/* Multicolumn Layout */
+.description {
+    column-count: 2;
+    column-gap: 20px;
+    text-align: justify;
+}
+
+/* Floated Image */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.description img {
+    float: right;
+    margin: 0 0 10px 10px;
+    width: 200px;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background: darkgrey;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid-nav {
+        grid-template-columns: 1fr;
+    }
+
+    .music-dance-container {
+        flex-direction: column;
+    }
+
+    .description {
+        column-count: 1;
+    }
+}

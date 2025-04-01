@@ -1,49 +1,128 @@
-
-header h1 {
+header {
+    position: sticky;
+    top: 0;
+    background-color: #8c9eff;
+    padding: 10px;
+    z-index: 1000;
     text-align: center;
-    top:30px;
+}
+
+nav {
+    background-color: #FFD700;
+    padding: 10px;
+}
+
+.grid-nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.grid-nav li {
+    padding: 10px;
+}
+
+.grid-nav a {
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+}
+
+table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+
+#start {
+    column-count: 2;
+    column-gap: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+body {
+    background-color: #e0f7fa;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.3;
+}
+
+a {
+    background-color: #808080;
+    color: white;
+    padding: 1px 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #a8a8d8;
+}
+
+table tr:hover {
+    background-color: #ffe0b2;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    background-color: #6a6a6a;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:nth-child(odd) {
+    background-color: #ffffff;
 }
 
 img {
-     float: right ;
-    margin-left: 10px ;
-    margin-right:5px;
-    margin-bottom:10px;
+    width:400px;
+    max-width: 100%;
+    height: auto;
+    float:left;
+    display: block;
+    margin: 5px;
 }
-#heading2{
-    text-decoration:underline;
-    text-decoration-style: dotted;
-    padding: 10px ;
-}
-#start{
-    padding: 20px ;
 
+h2, h3 {
+    color: #4a4a4a;
 }
-#Diwali{
-    border: 4px solid black ;
-    padding: 20px;
-}
-#Holi{
-    border: 4px solid black ;
-    padding: 20px ;
-    
-}
-#Baisakhi{
-    border: 4px solid black ;
-    padding: 20px ;
-    
-}
-table {
-    border: 2px solid white;
-    background-color: slategray;
-    padding: 10px ;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
-  }
-  
-  th,
-  td {
-    border: 1px solid rgb(160 160 160);
-    background-color: #e0e0e0;
-    padding: 5px ;
-  }
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    table {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2, h3 {
+        font-size: 1.5em;
+    }
+}

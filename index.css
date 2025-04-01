@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #20ffda;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.summary {
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content > div {
+    flex: 1 1 45%; /* Flex-grow, flex-shrink, flex-basis */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+    
+nav {
+    background-color: #FFD700;
+    padding: 10px;
+}
+
+.grid-nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.grid-nav li {
+    padding: 10px;
+}
+
+.grid-nav a {
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+}
+
+
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #f4f4f4;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Stack sections vertically */
+    }
+
+    .content > div {
+        flex: 1 1 100%; /* Full width for each section */
+        margin: 10px 0; /* Margin for vertical spacing */
+    }
+
+    nav ul li {
+        display: block; /* Stack navigation links vertically */
+        margin: 5px 0; /* Margin for vertical spacing */
+    }
+    .grid-nav {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    main {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    footer {
+        padding: 5px; /* Reduce padding on smaller screens */
+    }
+    
+}
