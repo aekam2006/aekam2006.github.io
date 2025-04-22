@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: darkred;
+    background-color: saddlebrown;
     color: white;
     padding: 1rem;
     position: fixed;
@@ -57,7 +57,7 @@ nav ul.nav-links li a:hover {
 
 /* Sidebar */
 .sidebar .card:nth-child(1) {
-    border: 8px solid saddlebrown;
+    border: 8px solid darkred;
 }
 
 .sidebar .card:nth-child(2) {
@@ -97,7 +97,7 @@ main {
 }
 
 main h2 {
-    color: darkred;
+    color: saddlebrown;
 }
 
 /* Carousel Styling */
@@ -115,7 +115,7 @@ main h2 {
 
 /* Footer */
 footer {
-    background-color: darkred;
+    background-color: saddlebrown;
     color: white;
     text-align: center;
     padding: 0.5rem;
