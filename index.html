@@ -1,102 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CULTURAL DIVERSITY</title>
-    <link rel="stylesheet" href="index.css">
-    
-    
+  <meta charset="UTF-8">
+  <title>Travis and His Cats</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header id="top">
-        <h1><u><strong>CULTURAL DIVERSITY IN INDIA</strong></u></h1>
-        <p> <a href="#bottom"> <i>LINK TO BOTTOM </i> </a></p><!--Link to bottom-->
-    </header>
-    <hr>
-      
-    <main>
-         
-        <section class="summary"><!--Summary containing cultural diversity of india-->
-            <header>
-                <h3><i><b><u>A brief summary:</u></b></i></h3>
-                
-            </header>
-            
-            
-            <p>Indian culture is one of the most ancient cultures present in the world. The country is quite diverse and is home to several communities, each of whom has their own culture and traditions. It is this combination of various splendid cultures that make India one of a kind. The Indian cultural diversity is what makes India unique and beautiful.Situated in the continent of Asia and enclosed by the Arabian sea, the Indian Ocean, and the Bay of Bengal, the nation, is divided into twenty-nine states and seven union territories. Pakistan, China, Bangladesh, Myanmar, Bhutan, and Nepal form the neighbouring countries of India.Indian culture is a colorful mosaic of traditions and values that continue to thrive in the modern world. Its emphasis on unity, diversity, and family forms the bedrock of society, shaping the lives of millions across the globe. Embracing and preserving this cultural heritage is essential for fostering harmony and understanding in an increasingly interconnected world.</p>
-            <br>
-            <blockquote><h3><i>"We may have different religions, different languages, different colored skin, but we all belong to one human race."</i></h3></blockquote>
-        </section>
-        
+  <header>
+    <div class="header-container">
+      <h1>Travis & The Cats</h1>
+      <nav>
+        <a href="mona.html">Mona</a>
+        <a href="tenley.html">Tenley</a>
+        <a href="maxwell.html">Maxwell</a>
+      </nav>
+    </div>
+  </header>
 
-        
-        <section class="content"> 
-            <div class="diversity">  
-                <header>
-                    <h2><u>India the Land of Diversity</u></h2>
-                </header>
-                <img src="india.png" alt="diversity" style="width: 500px;">
-                <p>India is a land of diversity each state in the country is home to several communities who live in harmony with each other while preserving and upholding their own distinct culture and traditions. From Delhi, the capital of India, to Tamil Nadu, the southernmost state of India, the land, is blessed with amazing scenic beauty. The country is also home to several historical monuments which add to the varied heritage of India.<mark><i>India's languages, religions, dance, music, architecture, food, and customs differ from place to place within the country.</i></mark></p>
+  <div class="main-layout">
+    <aside class="sidebar">
+      <h3>Vote for Your Favorite Cat</h3>
+      <form id="poll-form">
+        <label for="username" class="form-label">Your Name:</label>
+        <input type="text" id="username" name="username" required class="form-control">
+
+        <label for="favorite-cat" class="form-label">Favourite Cat:</label>
+        <select id="favorite-cat" name="favorite-cat"  required class="form-select">
+          <option value="" disabled selected>Select a Cat</option>
+          <option value="Mona">Mona</option>
+          <option value="Tenley">Tenley</option>
+          <option value="Maxwell">Maxwell</option>
+          <option value="Rocky">Rocky</option>
+        </select>
+        <br>
+
+        <button type="button" class="btn btn-primary" onclick="submitPoll()">Vote</button>
+      </form>
+
+      <div id="message-box"></div>
+            <div id="poll-results">
+                <h4>Poll Results</h4>
+                <ul id="results-list"></ul>
             </div>
-            
-        
-        
-        
-        <hr>
-        
-            <div class="festivals">
-                <header>
-                    <h2>FESTIVALS</h2>
-                </header>
-                <img src="festivalsimage.png" alt="varioous festivals" style="width: 500px;">
-                <P>India, being a multi-cultural, multi-ethnic and multi-religious society, celebrates holidays and festivals of various religions. The three national holidays in India, the Independence Day, the Republic Day and the Gandhi Jayanti, are celebrated with zeal and enthusiasm across India. In addition, many Indian states and regions have local festivals depending on prevalent religious and linguistic demographics. Popular religious festivals include the Hindu festivals of Chhath, Navratri, Janmashtami, Diwali, Maha Shivratri, Ganesh Chaturthi, Durga Puja, Holi, Rath Yatra, Ugadi, Vasant Panchami, Rakshabandhan, and Dussehra. Several harvest festivals such as Makar Sankranti, Sohrai, Pusnâ, Hornbill, Chapchar Kut, Pongal, Onam and Raja sankaranti swinging festival are also fairly popular.</P>
 
-           </div>
-        
-        
-            <div class="dance-music">
-                <header>
-                    <h2>DANCE AND MUSIC</h2> 
-                </header>
-                
-                <img src="m.png" alt="dance and music" style="width: 500px;">
-        <p>India has had a long romance with the art of dance. The Hindu Sanskrit texts Natya Shastra (Science of Dance) and Abhinaya Darpana (Mirror of Gesture) are estimated to be from 200 BCE to early centuries of the 1st millennium CE.
-            Music is an integral part of India's culture. Natyasastra, a 2000-year-old Sanskrit text, describes five systems of taxonomy to classify musical instruments.[169] One of these ancient Indian systems classifies musical instruments into four groups according to four primary sources of vibration: strings, membranes, cymbals, and air.
-        </p>
-        </div>
-    
-        
-        
-    
+      <h3 id="blog-nav-label">Blog Navigation</h3>
             
-            <div class="clothinig">
-                <header>
-                    <h2>CLOTHS</h2>
-                </header>
-                
-                <img src="cloth.png" alt="cloth" style="width: 500px;">
-                <p>Traditional clothing in India greatly varies across different parts of the country and is influenced by local culture, geography, climate, and rural/urban settings. Popular styles of dress include draped garments such as sari and mekhela sador for women and the kurta, dhoti or lungi or panche (in Kannada) for men. Stitched clothes are also popular such as churidar or salwar-kameez for women, with dupatta (long scarf) thrown over shoulder completing the outfit. The salwar is often loose fitting, while churidar is a tighter cut. The dastar, a headgear worn by Sikhs is common in Punjab.</p>
+      <nav aria-labelledby="blog-nav-label">
+        <a href="#blog">Mona and Tenley Fighting</a>
+        <a href="#travelling">Travelling</a>
+        <a href="#space">Space Making Post</a>
+      </nav>
+    </aside>
 
+    <main class="content">
+      <section id="blog">
+        <h2>Blog Posts</h2>
+        <article class="post">
+            <h3>Mona and Tenley Fighting <span class="badge bg-primary">New</span></h3>
+            <div >
+                Tags: 
+                <span class="badge bg-primary">Short</span>
+                <span class="badge bg-secondary">Mona</span>
+                <span class="badge bg-success">Tenley</span>
+                <span class="badge bg-info">English</span>
             </div>
-        </section>
-        
-        
-        <h3>In our website we will emphasise on festivals,music and clothing.</h3>
-        <nav>
-            <ul class="grid-nav">                                            
-                <li><a href="festivals.html">FESTIVALS</a></li>
-                <li><a href="music3.html">MUSIC</a></li>
-                <li><a href="clothing.html">CLOTHING</a></li>
-            </ul>
-        </nav>
-        <hr>
-    </main>
-    <footer id="bottom">
-        <p> <a href="#top"> <i>LINK TO TOP</i> </a></p><!--Link to bottom-->
-        &copy;<a href="https://www.caleidoscope.in">https://www.caleidoscope.in/art-culture/indian-cultural-diversity</a>
-        <p>Page created by group #2 | &copy;2025 Red Deer polytechnic, All rights reserved.</p>
-    </footer>
-    
+            <p>Gosh, they sure do love to fight a lot – their personalities just clash. Mona is so anxious and shy all the time, and Tenley is young and rambunctious and loves to play, so they just don’t get along sometimes! I’ve tried many things to help, but the best thing to do is to have my partner and I play with each of them separately and give them lots of cuddles – that does the trick!</p>
+        </article>
+    </section>
+    <div id="travelling"> 
+        <article class="post">
+            <h3>Traveling</h3>
+            <div >
+                Tags: 
+                <span class="badge bg-primary">Short</span>
+                <span class="badge bg-success">Tenley</span>
+                <span class="badge bg-info">English</span>
+            </div>
+            <p>Dangit, I have to go to New Orleans for a conference which means leaving my poor little kitties behind! I can’t imagine they would enjoy such a trip… Tenley is terrified of leaving the house. Every time I put her on a little harness to go for a walk, she panics and runs back inside. What a strange cat!</p>
+          </article>
+        </div> 
+    <div id="space">
+        <article class="post">
+            <h3>Space Making Post</h3>
+            <div class="blog-tags">
+                Tags: 
+                <span class="badge bg-primary">Long</span>
+                <span class="badge bg-secondary">Maxwell</span>
+                <span class="badge bg-warning">Latin</span>
+            </div>
+            <p>This is just to test your layout. Its a bunch of lorem ipsum, which Maxwell spoke fluently.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas lobortis arcu, nec mattis diam consectetur at. Quisque nec leo id leo aliquet finibus. Praesent ut risus mattis libero condimentum dictum imperdiet eget nibh. Donec elit erat, finibus vel rhoncus in, tincidunt ac lorem. Phasellus vestibulum ipsum et lorem gravida, commodo accumsan magna posuere. Proin sodales egestas pellentesque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam a nibh at est condimentum porttitor ut quis est. Donec accumsan lobortis purus, eget rhoncus tellus varius lacinia. Suspendisse potenti. Sed mollis egestas tempus. Duis a lectus libero. Nam sed est turpis. Nunc justo arcu, feugiat quis elit eu, cursus euismod mi. Curabitur rutrum nisl libero, in elementum neque volutpat euismod. Mauris semper sollicitudin purus nec tempus.
+                Ut mattis nulla sem, ac tristique est aliquam et. Maecenas lorem velit, ornare quis aliquam sed, viverra vitae diam. Duis et sem mi. Praesent pretium nisi interdum, ullamcorper nisl non, pharetra orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer ullamcorper sit amet quam ac tincidunt. Proin eget faucibus nisi. Donec finibus facilisis felis non consectetur. Aliquam quis volutpat tellus, vitae condimentum urna. Praesent vitae augue fringilla, pretium eros vel, ultrices lectus.
+                Nunc eleifend mauris quam, sed vulputate ante semper vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur varius ex et ante viverra, vel fringilla quam luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis libero non purus hendrerit tempor. Nullam libero ante, dictum et eros nec, iaculis tempus dolor. Praesent sit amet mollis velit. Suspendisse aliquet convallis sapien, ut pretium magna iaculis vitae. Donec lobortis nibh et lorem pellentesque luctus.
+                Duis et augue laoreet, pellentesque metus in, bibendum nulla. Fusce ut ante leo. Sed ullamcorper felis at eros facilisis, nec dignissim eros lobortis. Pellentesque nec luctus lorem, sit amet facilisis sapien. Vivamus et massa tempor, mollis risus sit amet, elementum ipsum. Aliquam massa quam, maximus vitae congue ac, pretium a sapien. Nullam faucibus neque a libero feugiat pharetra. In quis turpis eu metus pharetra volutpat. Mauris nisi felis, hendrerit sit amet erat at, interdum lobortis nisi. Maecenas at nulla at eros varius vehicula. Mauris mollis sem orci, vel fermentum dui aliquet a. Etiam tristique sit amet velit eget iaculis. In ultrices volutpat dignissim. In mollis eros at ipsum convallis tempor. Fusce at orci ac mi elementum sollicitudin.</p>
+            </article>
+          </div>
+  </main>
+  
+</div>
+
+  <footer>
+    <p>Made by Group 2 | Images supplied by Travis Cattington.</p>
+  </footer>
+  <script src="javascript/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
