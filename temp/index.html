@@ -1,1 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travis and His Cats</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1>Travis & The Cats</h1>
+      <nav>
+        <a href="mona.html">Mona</a>
+        <a href="tenley.html">Tenley</a>
+        <a href="maxwell.html">Maxwell</a>
+      </nav>
+    </div>
+  </header>
 
+  <div class="main-layout">
+    <aside class="sidebar">
+      <h3>Vote for Your Favorite Cat</h3>
+      <form id="poll-form">
+        <label for="username" class="form-label">Your Name:</label>
+        <input type="text" id="username" name="username" required class="form-control">
+
+        <label for="favorite-cat" class="form-label">Favourite Cat:</label>
+        <select id="favorite-cat" name="favorite-cat"  required class="form-select">
+          <option value="" disabled selected>Select a Cat</option>
+          <option value="Mona">Mona</option>
+          <option value="Tenley">Tenley</option>
+          <option value="Maxwell">Maxwell</option>
+          <option value="Rocky">Rocky</option>
+        </select>
+        <br>
+
+        <button type="button" class="btn btn-primary" onclick="submitPoll()">Vote</button>
+      </form>
+
+      <div id="message-box"></div>
+            <div id="poll-results">
+                <h4>Poll Results</h4>
+                <ul id="results-list"></ul>
+            </div>
+
+      <h3 id="blog-nav-label">Blog Navigation</h3>
+            
+      <nav aria-labelledby="blog-nav-label">
+        <a href="#blog">Mona and Tenley Fighting</a>
+        <a href="#travelling">Travelling</a>
+        <a href="#space">Space Making Post</a>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <section id="blog">
+        <h2>Blog Posts</h2>
+        <article class="post">
+            <h3>Mona and Tenley Fighting <span class="badge bg-primary">New</span></h3>
+            <div >
+                Tags: 
+                <span class="badge bg-primary">Short</span>
+                <span class="badge bg-secondary">Mona</span>
+                <span class="badge bg-success">Tenley</span>
+                <span class="badge bg-info">English</span>
+            </div>
+            <p>Gosh, they sure do love to fight a lot – their personalities just clash. Mona is so anxious and shy all the time, and Tenley is young and rambunctious and loves to play, so they just don’t get along sometimes! I’ve tried many things to help, but the best thing to do is to have my partner and I play with each of them separately and give them lots of cuddles – that does the trick!</p>
+        </article>
+    </section>
+    <div id="travelling"> 
+        <article class="post">
+            <h3>Traveling</h3>
+            <div >
+                Tags: 
+                <span class="badge bg-primary">Short</span>
+                <span class="badge bg-success">Tenley</span>
+                <span class="badge bg-info">English</span>
+            </div>
+            <p>Dangit, I have to go to New Orleans for a conference which means leaving my poor little kitties behind! I can’t imagine they would enjoy such a trip… Tenley is terrified of leaving the house. Every time I put her on a little harness to go for a walk, she panics and runs back inside. What a strange cat!</p>
+          </article>
+        </div> 
+    <div id="space">
+        <article class="post">
+            <h3>Space Making Post</h3>
+            <div class="blog-tags">
+                Tags: 
+                <span class="badge bg-primary">Long</span>
+                <span class="badge bg-secondary">Maxwell</span>
+                <span class="badge bg-warning">Latin</span>
+            </div>
+            <p>This is just to test your layout. Its a bunch of lorem ipsum, which Maxwell spoke fluently.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas lobortis arcu, nec mattis diam consectetur at. Quisque nec leo id leo aliquet finibus. Praesent ut risus mattis libero condimentum dictum imperdiet eget nibh. Donec elit erat, finibus vel rhoncus in, tincidunt ac lorem. Phasellus vestibulum ipsum et lorem gravida, commodo accumsan magna posuere. Proin sodales egestas pellentesque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam a nibh at est condimentum porttitor ut quis est. Donec accumsan lobortis purus, eget rhoncus tellus varius lacinia. Suspendisse potenti. Sed mollis egestas tempus. Duis a lectus libero. Nam sed est turpis. Nunc justo arcu, feugiat quis elit eu, cursus euismod mi. Curabitur rutrum nisl libero, in elementum neque volutpat euismod. Mauris semper sollicitudin purus nec tempus.
+                Ut mattis nulla sem, ac tristique est aliquam et. Maecenas lorem velit, ornare quis aliquam sed, viverra vitae diam. Duis et sem mi. Praesent pretium nisi interdum, ullamcorper nisl non, pharetra orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer ullamcorper sit amet quam ac tincidunt. Proin eget faucibus nisi. Donec finibus facilisis felis non consectetur. Aliquam quis volutpat tellus, vitae condimentum urna. Praesent vitae augue fringilla, pretium eros vel, ultrices lectus.
+                Nunc eleifend mauris quam, sed vulputate ante semper vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur varius ex et ante viverra, vel fringilla quam luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis libero non purus hendrerit tempor. Nullam libero ante, dictum et eros nec, iaculis tempus dolor. Praesent sit amet mollis velit. Suspendisse aliquet convallis sapien, ut pretium magna iaculis vitae. Donec lobortis nibh et lorem pellentesque luctus.
+                Duis et augue laoreet, pellentesque metus in, bibendum nulla. Fusce ut ante leo. Sed ullamcorper felis at eros facilisis, nec dignissim eros lobortis. Pellentesque nec luctus lorem, sit amet facilisis sapien. Vivamus et massa tempor, mollis risus sit amet, elementum ipsum. Aliquam massa quam, maximus vitae congue ac, pretium a sapien. Nullam faucibus neque a libero feugiat pharetra. In quis turpis eu metus pharetra volutpat. Mauris nisi felis, hendrerit sit amet erat at, interdum lobortis nisi. Maecenas at nulla at eros varius vehicula. Mauris mollis sem orci, vel fermentum dui aliquet a. Etiam tristique sit amet velit eget iaculis. In ultrices volutpat dignissim. In mollis eros at ipsum convallis tempor. Fusce at orci ac mi elementum sollicitudin.</p>
+            </article>
+          </div>
+  </main>
+  
+</div>
+
+  <footer>
+    <p>Made by Group 2 | Images supplied by Travis Cattington.</p>
+  </footer>
+  <script src="javascript/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
